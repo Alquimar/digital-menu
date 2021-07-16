@@ -78,6 +78,7 @@ THIRD_PARTY_APPS = [
 
 LOCAL_APPS = [
     "digital_menu.users.apps.UsersConfig",
+    "digital_menu.core.apps.CoreConfig",
     # Your stuff: custom apps go here
 ]
 # https://docs.djangoproject.com/en/dev/ref/settings/#installed-apps
