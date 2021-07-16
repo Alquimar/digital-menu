@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block content %}
+<section class="page-section about-heading">
+    <div class="container">
+        <img class="img-fluid rounded about-heading-img mb-3 mb-lg-0" src="{% static 'assets/images/about.jpg' %}" alt="..." />
+        <div class="about-heading-content">
+            <div class="row">
+                <div class="col-xl-9 col-lg-10 mx-auto">
+                    <div class="bg-faded rounded p-5">
+                        <h2 class="section-heading mb-4">
+                            <span class="section-heading-upper">Facilidade, Praticidade</span>
+                            <span class="section-heading-lower">Sobre Nossa Ferramenta</span>
+                        </h2>
+                        <p>O cardápio físico apesar de ser uma peça elegante, pode gerar altos custos, por estar vulnerável à deteriorizações causadas por rasgos, líquidos derramados, manchas, etc. O custo de modificação de apenas um determinado item é alto, devido ao fato de ter que reimprimir a folha referetente ao item, ou então, em alguns casos, até a reimpressão completa do cardápio.</p>
+                        {% comment %} <p>Devido a dificuldade e o custo elevado para alterar itens e/ou adquirir novos cardápios, surgiu a ideia de criar uma ferramenta para resolver esse problema. our establishment has been serving up rich coffee sourced from artisan farmers in various regions of South and Central America. We are dedicated to travelling the world, finding the best coffee, and bringing back to you here in our cafe.</p> {% endcomment %}
+                        <p>
+                        Nós garantimos que o seu estabelecimento apresentará um cardápio elegante, de forma rápida e prática, podendo fazer quantas alterações forem necessárias, quando e como quiser.
+                        Junte-se a nós e proporcione aos seus clientes toda elegância e praticidade de um cardápio digital.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock content %}
