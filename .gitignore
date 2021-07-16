@@ -278,3 +278,5 @@ digital_menu/media/
 .env
 .envs/*
 # !.envs/.local/
+
+templates_
