@@ -5,6 +5,6 @@ app_name = "core"
 urlpatterns = [
     path("", TemplateView.as_view(template_name="core/index.html"),
          name="home"),
-    path("about/", TemplateView.as_view(template_name="core/about.html"),
+    path("sobre/", TemplateView.as_view(template_name="core/about.html"),
          name="about"),
 ]
