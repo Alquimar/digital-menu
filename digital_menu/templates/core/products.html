@@ -1,0 +1,60 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block content %}
+<section class="page-section">
+    <div class="container">
+        <div class="product-item">
+            <div class="product-item-title d-flex">
+                <div class="bg-faded p-5 d-flex ms-auto rounded">
+                    <h2 class="section-heading mb-0">
+                        <span class="section-heading-upper">Combinação perfeita</span>
+                        <span class="section-heading-lower">Hambúrguer & Fritas</span>
+                    </h2>
+                </div>
+            </div>
+            <img class="product-item-img mx-auto d-flex rounded img-fluid mb-3 mb-lg-0" src="{% static 'assets/images/products-01.jpg' %}" alt="..." />
+            <div class="product-item-description d-flex me-auto">
+                <div class="bg-faded p-5 rounded"><p class="mb-0">Hambúrguer Bovino de 180g + Bacon triturado + Molho de ervas + Cebola roxa + Tomate + Alface picado + Muçarela + Pão Brioche + FRITAS</p></div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="page-section">
+    <div class="container">
+        <div class="product-item">
+            <div class="product-item-title d-flex">
+                <div class="bg-faded p-5 d-flex me-auto rounded">
+                    <h2 class="section-heading mb-0">
+                        <span class="section-heading-upper">Drinks únicos, sabores inesquecíveis</span>
+                        <span class="section-heading-lower">Gin da casa</span>
+                    </h2>
+                </div>
+            </div>
+            <img class="product-item-img mx-auto d-flex rounded img-fluid mb-3 mb-lg-0" src="{% static 'assets/images/products-02.jpg' %}" alt="..." />
+            <div class="product-item-description d-flex ms-auto">
+                <div class="bg-faded p-5 rounded"><p class="mb-0">Nosso menu sazonal oferece bebidas deliciosas, destilados ​​e drinks, perfeitas para um happy hour. Sempre que possível, compramos nossos ingredientes de fornecedores locais e artesanais, juntamente com fornecedores premium de produtos especiais.</p></div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="page-section">
+    <div class="container">
+        <div class="product-item">
+            <div class="product-item-title d-flex">
+                <div class="bg-faded p-5 d-flex ms-auto rounded">
+                    <h2 class="section-heading mb-0">
+                        <span class="section-heading-upper">Sobremesa deliciosa, (Brownie, caramelo salgado,  flor de sal, crumble e sorvete.)</span>
+                        <span class="section-heading-lower">Brownie</span>
+                    </h2>
+                </div>
+            </div>
+            <img class="product-item-img mx-auto d-flex rounded img-fluid mb-3 mb-lg-0" src="{% static 'assets/images/products-03.jpg' %}" alt="..." />
+            <div class="product-item-description d-flex me-auto">
+                <div class="bg-faded p-5 rounded"><p class="mb-0">Oferecemos a melhor qualidade. Ao nos visitar, você sempre encontrará sobremesas do mundo todo, principalmente das regiões da América Central e do Sul. Visite-nos pessoalmente para obter mais detalhes.</p></div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock content %}
