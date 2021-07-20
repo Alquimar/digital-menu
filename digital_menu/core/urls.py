@@ -1,9 +1,8 @@
 from django.urls import path
-
-from digital_menu.core.views import home, about
+from django.views.generic import TemplateView
 
 app_name = "core"
 urlpatterns = [
-    path("", view=home, name="home"),
-    path("about/", view=about, name="about"),
+    path("", TemplateView.as_view(template_name="core/index.html"), name="home"),
+    path("about/", TemplateView.as_view(template_name="core/about.html"), name="about"),
 ]
