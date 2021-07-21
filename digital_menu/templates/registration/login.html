@@ -1,0 +1,53 @@
+{% extends 'base.html' %}
+
+{% load static %}
+{% load widget_tweaks %}
+
+{% block css %}
+<link href="{% static 'css/styles.css' %}" rel="stylesheet" />
+<link href="{% static 'css/login.css' %}" rel="stylesheet" />
+{% endblock css %}
+
+{% block header %}{% endblock header %}
+{% block nav %}{% endblock nav %}
+{% block content %}
+<div class="wrapper fadeInDown">
+  <div id="formContent">
+    <!-- Tabs Titles -->
+
+    <!-- Icon -->
+    {% comment %} <div class="fadeIn first">
+      <i class="fas fa-user fa-lg"></i>
+    </div> {% endcomment %}
+
+    {% if form.errors %}
+      <p>Seu nome de usuário e senha não coincidem. Por favor, tente novamente.</p>
+    {% endif %}
+
+    {% if next %}
+      {% if user.is_authenticated %}
+        <p>Sua conta não tem acesso a esta página. Para prosseguir,
+        faça login com uma conta que tenha acesso.</p>
+      {% else %}
+        <p>Por favor, faça o login para ver esta página.</p>
+      {% endif %}
+    {% endif %}
+
+    <!-- Login Form -->
+    <form style="margin-top: 25px;" method="post" action="{% url 'login' %}">
+      {% csrf_token %}
+      {% render_field form.username class+="fadeIn third" placeholder+="Usuário" %}
+      {% render_field form.password class+="fadeIn third" placeholder+="Senha" %}
+      <input type="submit" class="fadeIn fourth" value="Entrar">
+      <input type="hidden" name="next" value="{{ next }}" />
+    </form>
+
+    <!-- Remind Passowrd -->
+    <div id="formFooter">
+      <a class="underlineHover" href="{% url 'password_reset' %}">Esqueceu a senha?</a>
+    </div>
+
+  </div>
+</div>
+{% endblock content %}
+{% block footer %}{% endblock footer %}
