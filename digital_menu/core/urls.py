@@ -9,4 +9,6 @@ urlpatterns = [
          name="about"),
     path("produtos/", TemplateView.as_view(template_name="core/products.html"),
          name="products"),
+    path("loja/", TemplateView.as_view(template_name="core/store.html"),
+         name="store"),
 ]
