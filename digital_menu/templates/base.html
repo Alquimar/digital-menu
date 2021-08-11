@@ -6,8 +6,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>Business Casual - Start Bootstrap Theme</title>
-        <link rel="icon" type="image/x-icon" href="{% static 'assets/icons/favicon.ico' %}" />
+        <title>{% block title %}Cardápio Digital{% endblock title %}</title>
+        {% block icon %}<link rel="icon" type="" href="{% static 'assets/icons/icon.png' %}" />{% endblock icon %}
         {% block css %}
             <!-- Google fonts-->
             <link href="{% static 'css/fonts/Raleway.css' %}" rel="stylesheet" />

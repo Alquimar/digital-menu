@@ -11,5 +11,5 @@ urlpatterns = [
          name="products"),
     path("loja/", TemplateView.as_view(template_name="core/store.html"),
          name="store"),
-    path('estabelecimentos/', include("digital_menu.establishment.urls", namespace="establishment")),
+    path('estabelecimentos/', include("digital_menu.establishment.urls", namespace="establishments")),
 ]

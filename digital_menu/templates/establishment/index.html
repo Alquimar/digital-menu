@@ -1,1 +1,10 @@
-{% extends 'core/index.html' %}
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block icon %}<link rel="icon" type="" href="{% static 'assets/icons/at_home.png' %}" />{% endblock icon %}
+
+{% block title %}{{ establishment }}{% endblock title %}
+
+{% block content %}
+{% endblock content %}

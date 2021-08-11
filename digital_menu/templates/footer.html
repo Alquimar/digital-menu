@@ -1,3 +1,9 @@
 <footer class="footer text-faded text-center py-5">
+    {% if establishment %}
+        <div class="container">
+            <a href="{{ establishment.instagram }}"><i class="fab fa-instagram fa-2x"></i></a>
+            <a href="{{ establishment.facebook }}"><i class="fab fa-facebook-square fa-2x"></i></a>
+        </div>
+    {% endif %}
     <div class="container"><p class="m-0 small">Copyright &copy; Cardápio Digital 2021</p></div>
 </footer>
